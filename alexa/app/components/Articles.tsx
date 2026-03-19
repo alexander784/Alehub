@@ -1,24 +1,18 @@
 import React from "react"
 const articles = [
   {
-    title: "Building a Next.js SaaS Dashboard",
-    publisher: "Dev.to",
-    date: "Jan 2025",
-    desc: "Step-by-step guide to creating a fast, scalable dashboard in Next.js with Tailwind CSS and React Hooks.",
-    link: "#",
+    title: "A System Design Approach",
+    desc: "A step by step step to designing a scalable web application",
+    link: "https://medium.com/@ga.nyaga7/a-system-design-approach-0b43f1b3650c",
   },
   {
-    title: "Optimizing React Performance",
-    publisher: "Medium",
-    date: "Dec 2024",
-    desc: "Techniques to improve performance in large React applications including memoization, code splitting, and lazy loading.",
-    link: "#",
+    title: "Deploying a kubernetes App to AWS",
+    desc: "In this article we successfully went through kubernetes it purpoise and eventually deployed a Kubernetes app to the AWS cloud.",
+    link: "https://medium.com/@ga.nyaga7/deploying-a-kubernetes-app-to-aws-78b2e3889ff0",
   },
   {
-    title: "Design Systems for Startups",
-    publisher: "Hashnode",
-    date: "Oct 2024",
-    desc: "How to implement a lightweight, reusable design system for small product teams without slowing development.",
+    title: "production Ready Weather ETL Pipeline with Python,Airflow and Docker",
+    desc: "Step followedin a data pipeline from Extraction of Data Transformation and loading into a database on warehouse ",
     link: "#",
   },
 ]
@@ -35,9 +29,6 @@ const Articles = () => {
             <div className="text-right md:text-right">
               <p className="font-mono text-[11px] uppercase tracking-widest text-amber-400">
                 {a.title}
-              </p>
-              <p className="font-mono text-[10px] uppercase tracking-widest text-white/40 mt-1">
-                {a.publisher} · {a.date}
               </p>
             </div>
 

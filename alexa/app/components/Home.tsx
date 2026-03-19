@@ -13,7 +13,6 @@ const Home = () => {
     <section className="flex items-start justify-center px-[6vw] pt-16 pb-4">
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         
-        {/* Left */}
         <div className="flex flex-col gap-4">
           <p className="font-mono text-[10px] uppercase tracking-widest text-amber-400">
             Data & Software Developer
@@ -24,11 +23,10 @@ const Home = () => {
           </h1>
 
           <p className="text-sm text-white/70 max-w-[40ch]">
-            Hi, I'm <strong className="text-white">Your Name</strong>. I build fast,
+            Hi, I'm <strong className="text-white">Alexander Nyaga</strong>. I build fast,
             accessible web apps with clean code and thoughtful UX.
           </p>
 
-          {/* Contacts */}
           <div className="flex items-center gap-3 pt-2">
             {contacts.map(({ icon: Icon, href, label }) => (
               <a
@@ -44,7 +42,6 @@ const Home = () => {
             ))}
           </div>
 
-          {/* Buttons */}
           <div className="flex gap-3 pt-3">
             <a
               href="#projects"
@@ -52,6 +49,7 @@ const Home = () => {
             >
               Projects
             </a>
+
 
             <a
               href="#contact"
@@ -62,7 +60,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right */}
         <div className="relative flex justify-center lg:justify-end">
           <div className="w-[260px] h-[340px] rounded-md bg-white/5 border border-white/10 flex items-center justify-center text-white/30 text-sm">
             Your Photo
