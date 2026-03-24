@@ -49,14 +49,12 @@ const Home = () => {
             >
               Projects
             </a>
+            <div>
+              <h3>ga.nyaga7@gmail.com</h3>
+            </div>
 
 
-            <a
-              href="#contact"
-              className="px-6 py-2 text-xs font-mono uppercase tracking-wider border border-white/20 text-white/70 rounded hover:border-white/60 hover:text-white transition"
-            >
-              Contact
-            </a>
+           
           </div>
         </div>
 
