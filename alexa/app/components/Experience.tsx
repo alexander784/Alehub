@@ -21,7 +21,7 @@ const Experience = () => {
       id="experience"
       className="py-10 flex flex-col items-start"
     >
-      <div className="max-w-4xl mx-auto w-full px-[6vw] md:pl-[12vw]">
+      <div className="max-w-4xl w-full ml-auto pr-[6vw] md:pr-[12vw]">
         <h2 className="text-2xl font-bold text-white mb-6">
           Professional Experience
         </h2>

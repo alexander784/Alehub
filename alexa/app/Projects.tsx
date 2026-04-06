@@ -35,7 +35,11 @@ const projects = [
 
 const Projects = () => {
   return (
+
     <section id="projects" className="px-[6vw] py-10 flex flex-col gap-16 border-t border-white/10">
+      <h2 className="text-2xl font-bold text-white mb-6">
+          Projects
+        </h2>
       {projects.map((p, i) => {
         const isEven = i % 2 === 0
 

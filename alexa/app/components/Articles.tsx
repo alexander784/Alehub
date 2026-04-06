@@ -19,7 +19,11 @@ const articles = [
 const Articles = () => {
   return (
     <section id="articles" className="px-[6vw] py-10 flex justify-center border-t border-white/10">
+     
       <div className="w-full max-w-4xl flex flex-col gap-6">
+         <h2 className="text-2xl font-bold text-white mb-6">
+          My Blogs
+        </h2>
         {articles.map((a, i) => (
           <a
             key={i}
