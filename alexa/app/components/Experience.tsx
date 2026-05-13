@@ -44,7 +44,7 @@ const Experience = () => {
               <div className="hidden md:block w-px bg-white/15"></div>
 
               <div>
-                <h3 className="text-lg tracking-tight">{job.role}</h3>
+                <h3 className="text-lg tracking-tight text-white">{job.role}</h3>
                 <p className="text-sm text-white/60 leading-relaxed mt-1 max-w-[50ch]">
                   {job.desc}
                 </p>
