@@ -1,72 +1,152 @@
-import React from "react"
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa"
+import React from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const contacts = [
-  { icon: FaGithub, href: "https://github.com/yourname", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/yourname", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com/yourname", label: "Twitter" },
-  { icon: FaEnvelope, href: "mailto:hello@yourname.dev", label: "Email" },
-]
+  {
+    icon: FaEnvelope,
+    href: "mailto:ga.nyaga7@gmail.com",
+    label: "Email",
+    value: "ga.nyaga7@gmail.com",
+  },
+  {
+    icon: FaPhoneAlt,
+    href: "tel:+254796097131",
+    label: "Phone",
+    value: "+254 96097131",
+  },
+  {
+    icon: FaLinkedin,
+    href: "https://linkedin.com",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaGithub,
+    href: "https://github.com/alexander784",
+    label: "GitHub",
+  },
+];
 
 const Home = () => {
   return (
-    <section className="flex items-start justify-center px-[6vw] pt-16 pb-4">
-      <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-        
-        <div className="flex flex-col gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-amber-400">
-            Data & Software Developer
-          </p>
+    <section className="flex items-start px-[5vw] pt-2 pb-6">
+    <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.65fr_0.35fr] gap-6 items-center">
 
-          <h1 className="text-[clamp(2rem,4vw,3rem)] leading-tight font-medium">
-            Crafting <span className="italic text-amber-400">digital</span> experiences.
-          </h1>
+      <div className="flex flex-col justify-start">
 
-          <p className="text-sm text-white/70 max-w-[40ch]">
-            Hi, I'm <strong className="text-white">Alexander Nyaga</strong>. I build fast,
-            accessible web apps with clean code and thoughtful UX.
-          </p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-amber-400 mb-3">
+          Data & Software Developer
+        </p>
 
-          <div className="flex items-center gap-3 pt-2">
-            {contacts.map(({ icon: Icon, href, label }) => (
+        <p className="mt-4 text-[16px] leading-relaxed text-white/70 max-w-3xl">
+          Hi, My name is{" "}
+          <strong className="text-white">
+            Alexander Nyaga
+          </strong>
+          . I build scalable web applications, AI-powered systems,
+          and modern user experiences using Python, React, Next.js,
+          and cloud technologies.
+        </p>
+
+        <div className="mt-7">
+
+          <h2 className="text-lg font-semibold text-white mb-4">
+            Contacts
+          </h2>
+          <div className=" gap-x-8 gap-y-4">
+
+            {contacts.map(({ icon: Icon, href, label, value }) => (
               <a
                 key={label}
                 href={href}
-                aria-label={label}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-9 h-9 rounded border border-white/15 text-white/60 hover:border-amber-400 hover:text-amber-400 transition"
+                className="
+                  flex items-center gap-3
+                  text-white/70
+                  hover:text-amber-400
+                  transition-all duration-300
+                "
               >
-                <Icon size={14} />
+
+                <div
+                  className="
+                    min-w-[42px]
+                    h-[42px]
+                    rounded-lg
+                    border border-white/10
+                    bg-white/5
+                    flex items-center justify-center
+                  "
+                >
+                  <Icon size={14} />
+                </div>
+
+                <div className="overflow-hidden">
+                  <span className="text-[12px] text-white/40 block">
+                    {label}
+                  </span>
+
+                  <span className="text-sm text-white/80 break-all">
+                    {value}
+                  </span>
+                </div>
+
               </a>
             ))}
-          </div>
 
-          <div className="flex gap-3 pt-3">
-            <a
-              href="#projects"
-              className="px-6 py-2 text-xs font-mono uppercase tracking-wider bg-amber-400 text-black rounded hover:bg-amber-300 transition"
-            >
-              Projects
-            </a>
-            <div>
-              <h3>ga.nyaga7@gmail.com</h3>
-            </div>
-
-
-           
           </div>
         </div>
 
-        <div className="relative flex justify-center lg:justify-end">
-          <div className="w-[260px] h-[340px] rounded-md bg-white/5 border border-white/10 flex items-center justify-center text-white/30 text-sm">
-            Your Photo
-          </div>
+        <div className="mt-7">
+          <a
+            href="#projects"
+            className="
+              inline-flex items-center
+              px-5 py-2.5
+              bg-amber-400
+              text-black
+              rounded-xl
+              text-sm
+              font-medium
+              hover:bg-amber-300
+              transition
+            "
+          >
+            View Projects
+          </a>
         </div>
 
       </div>
-    </section>
-  )
-}
 
-export default Home
+      <div className="flex justify-end lg:-mr-4">
+        <div
+          className="
+            relative
+            w-[240px]
+            h-[320px]
+            overflow-hidden
+            rounded-3xl
+            border border-white/10
+            bg-white/5
+            shadow-2xl
+          "
+        >
+          <img
+            src="/images/profile.jpg"
+            alt="Alexander Nyaga"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+    </div>
+</section>
+  );
+};
+
+export default Home;
