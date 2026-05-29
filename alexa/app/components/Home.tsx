@@ -71,7 +71,7 @@ const Home = () => {
         "
       >
         <img
-          src="/images/profile.jpg"
+          src="/images/Portf.jpg"
           alt="Alexander Nyaga"
           className="w-full h-full object-cover"
         />
