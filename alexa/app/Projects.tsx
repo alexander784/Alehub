@@ -48,10 +48,9 @@ const Projects = () => {
       className="px-[6vw] py-16 border-t border-white/10"
     >
       <h2 className="text-3xl font-bold text-white mb-12">
-        Projects
+        Proof of Work
       </h2>
 
-      {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((p, i) => (
           <a
@@ -73,7 +72,6 @@ const Projects = () => {
               shadow-lg
             "
           >
-            {/* IMAGE */}
             <div className="w-full h-52 overflow-hidden">
               <img
                 src={p.img}

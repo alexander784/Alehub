@@ -2,17 +2,17 @@ import React from "react"
 
 const experience = [
   {
-    role: "Senior Fullstack Developer",
+    role: "Fullstack Developer",
     company: "FGN Enterprises",
-    period: "08-10-2025 – 07-02-2026 ",
+    period: "08-12-2025 – present",
     desc: "Designed and deployed a custom POS system that eliminated manual paperwork and optimized time management across daily business operations.",
   },
   {
-    role: "Data Analyst",
+    role: "Fullstack Developer",
     company: "Truck Tech Investments",
-    period: "2021 – 2023",
-    desc: "Analyzed sales trends and customer purchasing behavior to identify revenue growth opportunities, contributing to a 70% increase in monthly sales..",
-  },
+    period: "2025 – 2026",
+    desc:  "Developed a responsive e-commerce platform using Next.js, Django, PostgreSQL, and AWS, supporting online payments, inventory management, and order processing for over 1,000+ products."
+  }
 ]
 
 const Experience = () => {
