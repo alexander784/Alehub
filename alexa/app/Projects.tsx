@@ -1,6 +1,22 @@
 import React from "react";
 
 const projects = [
+
+   {
+    title: "Twilio + NLP AI WhatsApp Chatbot",
+    tag: "Django · Twilio API · Bot",
+    desc: "A WhatsApp chatbot built with Django to streamline booking management.",
+    link: "https://github.com/alexander784/Whatsapp_bot",
+    img: "/images/twilio.png",
+  },
+  {
+    title: "Student ID Replacement System",
+    tag: "Django ·Nextjs AWS",
+    desc: "A full-stack web application that streamlines the replacement process for lost or damaged university student IDs.",
+    link: "https://github.com/alexander784/Replacing",
+    img: "/images/portal.png",
+  },
+
   {
     title: "Weather ETL Pipeline with Airflow & Docker",
     tag: "Python Data Eng, Airflow",
@@ -25,13 +41,7 @@ const projects = [
     img: "/images/class pair.png",
   },
 
-  {
-    title: "Twilio + NLP AI WhatsApp Chatbot",
-    tag: "Django · Twilio API · Bot",
-    desc: "A WhatsApp chatbot built with Django to streamline booking management.",
-    link: "https://github.com/alexander784/Whatsapp_bot",
-    img: "/images/twilio.png",
-  },
+ 
    {
     title: "Dockerized Django Authentication system",
     tag: "Docker · Django · jwt · Python",

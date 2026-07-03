@@ -17,7 +17,7 @@ const contacts = [
   },
   {
     icon: FaLinkedin,
-    href: "https://linkedin.com/in/your-profile",
+    href: "https://linkedin.com",
     label: "LinkedIn",
   },
   {
@@ -44,8 +44,8 @@ const Home = () => {
                 Alexander Nyaga
               </span>
               . I am a developer and problem solver specializing in SaaS and
-              AI-powered products—from API integrations to full-scale platforms
-              built for long-term impact. I turn complex ideas into clean,
+              AI powered products from API integrations to full scale platforms
+              built for long term impact. I turn complex ideas into clean,
               scalable solutions that ship and endure.
             </p>
           </div>
