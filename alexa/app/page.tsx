@@ -6,7 +6,7 @@ import Articles from './components/Articles'
 
 const page = () => {
   return (
-    <div className='bg-stone-800'>
+    <div className='bg-white'>
       <Home />
       <Experience />
       <Projects />

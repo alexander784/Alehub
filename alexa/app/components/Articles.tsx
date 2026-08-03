@@ -28,8 +28,8 @@ const Articles = () => {
       className="px-[6vw] py-16 border-t border-white/10"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-white mb-8">
-          Articles
+        <h2 className="text-3xl font-bold text-black mb-8">
+          Insights & Articles
         </h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -41,7 +41,7 @@ const Articles = () => {
               rel="noopener noreferrer"
               className="group bg-white/5 border border-white/10 rounded-xl p-6 hover:border-amber-400 hover:-translate-y-1 transition-all duration-300"
             >
-              <h3 className="text-lg font-semibold text-white mb-3">
+              <h3 className="text-lg font-semibold text-black mb-3">
                 {article.title}
               </h3>
 
@@ -49,18 +49,18 @@ const Articles = () => {
                 {article.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-2 py-1 text-xs font-medium rounded-full bg-amber-400/10 text-amber-400 border border-amber-400/20"
+                    className="px-2 py-1 text-xs font-medium rounded-full bg-amber-400/10 text-gray-800 border border-amber-400/20"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <p className="text-white/70 text-sm leading-relaxed mb-6">
+              <p className="text-black/70 text-sm leading-relaxed mb-6">
                 {article.desc}
               </p>
 
-              <span className="text-amber-400 text-sm font-medium group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-gray-800 text-sm font-medium group-hover:translate-x-1 inline-block transition-transform">
                 Read More →
               </span>
             </a>

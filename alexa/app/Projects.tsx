@@ -57,8 +57,8 @@ const Projects = () => {
       id="projects"
       className="px-[6vw] py-16 border-t border-white/10"
     >
-      <h2 className="text-3xl font-bold text-white mb-12">
-        Proof of Work
+      <h2 className="text-3xl font-bold text-black mb-12">
+        Proof of impact
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -98,19 +98,19 @@ const Projects = () => {
             </div>
 
             <div className="p-6 flex flex-col gap-4">
-              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-amber-400/70">
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-black">
                 {p.tag}
               </p>
 
-              <h3 className="text-xl font-semibold text-white group-hover:text-amber-400 transition-colors">
+              <h3 className="text-xl font-semibold text-gray-800 group-hover:text-black transition-colors">
                 {p.title}
               </h3>
 
-              <p className="text-sm leading-relaxed text-white/70">
+              <p className="text-sm leading-relaxed text-black/70">
                 {p.desc}
               </p>
 
-              <span className="text-sm text-amber-400 mt-2">
+              <span className="text-sm text-black mt-2">
                 View Project →
               </span>
             </div>

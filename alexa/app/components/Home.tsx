@@ -14,7 +14,7 @@ const contacts = [
   {
     icon: FaPhoneAlt,
     label: "+254 796097131",
-  },
+  },  
   {
     icon: FaLinkedin,
     href: "https://linkedin.com",
@@ -34,13 +34,13 @@ const Home = () => {
         
         <div className="grid grid-cols-[1fr_auto] lg:grid-cols-[1.2fr_260px] items-center gap-6 lg:gap-12">
           <div className="min-w-0">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-amber-400 mb-3">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-black mb-3">
               Data & Software Developer
             </p>
 
-            <p className="text-[15px] leading-relaxed text-white/70 max-w-xl">
+            <p className="text-[15px] leading-relaxed text-black/70 max-w-xl">
               Hi, my name is{" "}
-              <span className="text-white font-semibold">
+              <span className="text-black font-semibold">
                 Alexander Nyaga
               </span>
               . I am a developer and problem solver specializing in SaaS and
@@ -60,7 +60,7 @@ const Home = () => {
                 sm:h-[220px]
                 overflow-hidden
                 rounded-3xl
-                border border-white/10
+                border border-black/10
                 bg-white/5
                 shadow-2xl
                 shrink-0
@@ -76,7 +76,7 @@ const Home = () => {
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-white mb-4">
+          <h2 className="text-lg font-semibold text-black mb-4">
             Contacts
           </h2>
 
@@ -88,7 +88,7 @@ const Home = () => {
                     flex items-center gap-2
                     px-4 py-2
                     rounded-full
-                    border border-white/10
+                    border border-black/10
                     bg-white/5
                   "
                 >
@@ -104,7 +104,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="
-                    text-white/70
+                    text-black/70
                     hover:text-amber-400
                     transition-colors duration-300
                   "
@@ -114,7 +114,7 @@ const Home = () => {
               ) : (
                 <div
                   key={label}
-                  className="text-white/70"
+                  className="text-black/70"
                 >
                   {content}
                 </div>
