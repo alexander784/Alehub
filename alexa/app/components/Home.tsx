@@ -34,11 +34,11 @@ const Home = () => {
         
         <div className="grid grid-cols-[1fr_auto] lg:grid-cols-[1.2fr_260px] items-center gap-6 lg:gap-12">
           <div className="min-w-0">
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-black mb-3">
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-black font-bold mb-3">
               Data & Software Developer
             </p>
 
-            <p className="text-[15px] leading-relaxed text-black/70 max-w-xl">
+            <p className="text-[16px] leading-relaxed text-black/80 max-w-xl">
               Hi, my name is{" "}
               <span className="text-black font-semibold">
                 Alexander Nyaga
