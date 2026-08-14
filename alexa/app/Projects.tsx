@@ -5,14 +5,14 @@ const projects = [
    {
     title: "Twilio + NLP AI WhatsApp Chatbot",
     tag: "Django · Twilio API · Bot",
-    desc: "A WhatsApp chatbot built with Django to streamline booking management.",
+    desc: "Automates booking interactions through WhatsApp, reducing the need for manual booking coordination",
     link: "https://github.com/alexander784/Whatsapp_bot",
     img: "/images/twilio.png",
   },
   {
     title: "Student ID Replacement System",
     tag: "Django ·Nextjs AWS",
-    desc: "A full-stack web application that streamlines the replacement process for lost or damaged university student IDs.",
+    desc: "Digitizes the student ID replacement workflow, replacing a manual process with a centralized system for submissions and administrative decisions",
     link: "https://github.com/alexander784/Replacing",
     img: "/images/portal.png",
   },
@@ -57,7 +57,7 @@ const Projects = () => {
       id="projects"
       className="px-[6vw] py-16 border-t border-white/10"
     >
-      <h2 className="text-3xl font-bold text-black mb-12">
+      <h2 className="text-3xl font-bold text-black mb-12 text-center">
         Proof of impact
       </h2>
 

@@ -28,7 +28,7 @@ const Articles = () => {
       className="px-[6vw] py-16 border-t border-white/10"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-black mb-8">
+        <h2 className="text-3xl font-bold text-black mb-8 text-center">
           Insights & Articles
         </h2>
 

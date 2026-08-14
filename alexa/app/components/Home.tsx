@@ -41,12 +41,13 @@ const Home = () => {
             <p className="text-[16px] leading-relaxed text-black/80 max-w-xl">
               Hi, my name is{" "}
               <span className="text-black font-semibold">
-                Alexander Nyaga
-              </span>
-              . I am a developer and problem solver specializing in SaaS and
-              AI powered products from API integrations to full scale platforms
-              built for long term impact. I turn complex ideas into clean,
-              scalable solutions that ship and endure.
+                Alexander Nyaga 
+              </span>{" "}
+              I'm an engineer and entrepreneur building <span className="text-black font-bold">scalable digital products</span>{" "}
+                and the <span className="text-black font-bold">data infrastructure</span> behind them. My work spans API and backend development, data pipelines, and venture building helping businesses turn technical ideas into lasting platforms
+             
+
+              . 
             </p>
           </div>
 
