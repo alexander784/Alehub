@@ -1,12 +1,17 @@
 import React from "react";
 import {
   FaGithub,
-  FaLinkedin,
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
 
-const contacts = [
+interface Contact {
+  icon: React.ComponentType<{ size?: number }>;
+  label: string;
+  href?: string;
+}
+
+const contacts: Contact[] = [
   {
     icon: FaEnvelope,
     label: "alexanders7sg@gmail.com",
@@ -14,11 +19,6 @@ const contacts = [
   {
     icon: FaPhoneAlt,
     label: "+254 796097131",
-  },  
-  {
-    icon: FaLinkedin,
-    href: "https://linkedin.com",
-    label: "LinkedIn",
   },
   {
     icon: FaGithub,
@@ -31,8 +31,9 @@ const Home = () => {
   return (
     <section className="flex items-start px-[5vw] pt-2 pb-6">
       <div className="w-full max-w-4xl mx-auto flex flex-col gap-10">
-        
-        <div className="grid grid-cols-[1fr_auto] lg:grid-cols-[1.2fr_260px] items-center gap-6 lg:gap-12">
+
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_260px] items-center gap-6 lg:gap-12">
+          
           <div className="min-w-0">
             <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-black font-bold mb-3">
               Data & Software Developer
@@ -41,22 +42,28 @@ const Home = () => {
             <p className="text-[16px] leading-relaxed text-black/80 max-w-xl">
               Hi, my name is{" "}
               <span className="text-black font-semibold">
-                Alexander Nyaga 
+                Alexander Nyaga
               </span>{" "}
-              I'm an engineer and entrepreneur building <span className="text-black font-bold">scalable digital products</span>{" "}
-                and the <span className="text-black font-bold">data infrastructure</span> behind them. My work spans API and backend development, data pipelines, and venture building helping businesses turn technical ideas into lasting platforms
-             
-
-              . 
+              I'm an engineer and entrepreneur building{" "}
+              <span className="text-black font-bold">
+                scalable digital products
+              </span>{" "}
+              and the{" "}
+              <span className="text-black font-bold">
+                data infrastructure
+              </span>{" "}
+              behind them. My work spans API and backend development,
+              data pipelines, and venture building helping businesses
+              turn technical ideas into lasting platforms.
             </p>
           </div>
 
-          <div className="flex justify-end lg:pt-3">
+          <div className="flex justify-center lg:justify-end lg:pt-3">
             <div
               className="
                 relative
-                w-[120px]
-                h-[150px]
+                w-[160px]
+                h-[200px]
                 sm:w-[170px]
                 sm:h-[220px]
                 overflow-hidden
@@ -70,10 +77,11 @@ const Home = () => {
               <img
                 src="/images/Portf.jpg"
                 alt="Alexander Nyaga"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover bg-rounded-3xl"
               />
             </div>
           </div>
+
         </div>
 
         <div>
@@ -113,10 +121,7 @@ const Home = () => {
                   {content}
                 </a>
               ) : (
-                <div
-                  key={label}
-                  className="text-black/70"
-                >
+                <div key={label} className="text-black/70">
                   {content}
                 </div>
               );
