@@ -2,26 +2,31 @@ import React from "react"
 
 const experience = [
   {
-    role: "Fullstack Developer",
-    company: "FGN Enterprises",
-    period: "08-12-2025 – present",
-    desc: "Designed and deployed a custom POS system that eliminated manual paperwork and optimized time management across daily business operations.",
+    role: "Software Developer",
+    company: "Buntu labs",
+    period: "08-12-2024 – 01-03-2025",
+    desc: [
+      "Integrated frontend features with REST APIs, handling authentication and role-based views (patient, doctor, admin).",
+      "Implemented secure display of sensitive health data across the platform.",
+      "Developed responsive, accessible patient and doctor interfaces for a telehealth platform using React/Next.js and TypeScript.",
+      "Built appointment booking, consultation, and Q&A flows.",
+    ],
   },
   {
     role: "Fullstack Developer",
     company: "Truck Tech Investments",
     period: "2025 – 2026",
-    desc:  "Developed a responsive e-commerce platform using Next.js, Django, PostgreSQL, and AWS, supporting online payments, inventory management, and order processing for over 1,000+ products."
-  }
+    desc: [
+      "Developed a responsive e-commerce platform using Next.js, Django, PostgreSQL, and AWS.",
+      "Supported online payments, inventory management, and order processing for 1,000+ products.",
+    ],
+  },
 ]
 
 const Experience = () => {
   return (
-    <section
-      id="experience"
-      className="py-10 flex flex-col items-start"
-    >
-      <div className="max-w-4xl w-full ml-auto pr-[6vw] md:pr-[12vw]">
+    <section id="experience" className="py-10 flex flex-col items-start">
+      <div className="ul max-w-4xl w-full ml-auto pr-[6vw] md:pr-[12vw]">
         <h2 className="text-2xl font-bold text-black mb-6">
           Professional Experience
         </h2>
@@ -45,9 +50,11 @@ const Experience = () => {
 
               <div>
                 <h3 className="text-lg tracking-tight text-black">{job.role}</h3>
-                <p className="text-sm text-black/60 leading-relaxed mt-1 max-w-[50ch]">
-                  {job.desc}
-                </p>
+                <ul className="mt-2 list-disc pl-5 space-y-1.5 text-sm text-black/60 leading-relaxed max-w-[60ch] marker:text-black/30">
+                  {job.desc.map((point, j) => (
+                    <li key={j}>{point}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
