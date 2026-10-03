@@ -25,7 +25,7 @@ const experience = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 flex flex-col items-start">
+    <section id="experience" className="py-10 flex flex-col items-start bg-amber-50">
       <div className="ul max-w-4xl w-full ml-auto pr-[6vw] md:pr-[12vw]">
         <h2 className="text-2xl font-bold text-black mb-6">
           Professional Experience

@@ -25,7 +25,7 @@ const Articles = () => {
   return (
     <section
       id="articles"
-      className="px-[6vw] py-16 border-t border-white/10"
+      className="px-[6vw] py-16 border-t border-white/10 bg-amber-50"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-black mb-8 text-center">

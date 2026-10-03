@@ -2,13 +2,22 @@ import React from "react";
 
 const projects = [
 
+  //  {
+  //   title: "Twilio + NLP AI WhatsApp Chatbot",
+  //   tag: "Django · Twilio API · Bot",
+  //   desc: "Automates booking interactions through WhatsApp, reducing the need for manual booking coordination",
+  //   link: "https://github.com/alexander784/Whatsapp_bot",
+  //   img: "/images/twilio.png",
+  // },
+
    {
-    title: "Twilio + NLP AI WhatsApp Chatbot",
-    tag: "Django · Twilio API · Bot",
-    desc: "Automates booking interactions through WhatsApp, reducing the need for manual booking coordination",
-    link: "https://github.com/alexander784/Whatsapp_bot",
-    img: "/images/twilio.png",
+    title: "Charisma Constructions",
+    tag: "Nextjs,Typescript AWS",
+    desc: "",
+    link: "https://construction-omega-drab.vercel.app/",
+    img: "/images/port.png",
   },
+
   {
     title: "Student ID Replacement System",
     tag: "Django ·Nextjs AWS",
@@ -55,7 +64,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="px-[6vw] py-16 border-t border-white/10"
+      className="px-[6vw] py-16 border-t border-white/10 bg-amber-50"
     >
       <h2 className="text-3xl font-bold text-black mb-12 text-center">
         Proof of impact
