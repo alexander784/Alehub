@@ -64,7 +64,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="px-[6vw] py-16 border-t border-white/10 bg-amber-50"
+      className="px-[6vw] py-16 border-t border-white/10 bg-green-50"
     >
       <h2 className="text-3xl font-bold text-black mb-12 text-center">
         Proof of impact

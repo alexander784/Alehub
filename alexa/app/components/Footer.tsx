@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import { Bricolage_Grotesque } from "next/font/google";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], display: "swap" });

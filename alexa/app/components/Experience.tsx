@@ -1,6 +1,26 @@
 import React from "react"
 
 const experience = [
+
+  {
+    role: "Fullstack Developer",
+    company: "Truck Tech Investments",
+    period: "2025 – 2026",
+    desc: [
+      "Developed a responsive e-commerce platform using Next.js, Django, PostgreSQL, and AWS.",
+      "Supported online payments, inventory management, and order processing for 1,000+ products.",
+    ],
+  },
+  {
+    role: "Data Analyst",
+    company: "LuxDev HQ",
+    period: "2025 – 2026",
+    desc: [
+      "Translated business questions into data-driven insights, presenting findings to non-technical teams to support decision-making",
+      "Designed and maintained ETL pipelines to extract, clean, and transform data from multiple sources into analysis-ready datasets, improving data reliability and reducing manual processing time",
+      "Developed interactive dashboards and visualizations using Power BI and Tableau, enabling stakeholders to explore data and monitor key performance indicators in real-time",
+    ],
+  },
   {
     role: "Software Developer",
     company: "Buntu labs",
@@ -12,20 +32,13 @@ const experience = [
       "Built appointment booking, consultation, and Q&A flows.",
     ],
   },
-  {
-    role: "Fullstack Developer",
-    company: "Truck Tech Investments",
-    period: "2025 – 2026",
-    desc: [
-      "Developed a responsive e-commerce platform using Next.js, Django, PostgreSQL, and AWS.",
-      "Supported online payments, inventory management, and order processing for 1,000+ products.",
-    ],
-  },
+  
 ]
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 flex flex-col items-start bg-amber-50">
+    <section id="experience" className="py-10 flex flex-col items-start bg-green-50">
+      
       <div className="ul max-w-4xl w-full ml-auto pr-[6vw] md:pr-[12vw]">
         <h2 className="text-2xl font-bold text-black mb-6">
           Professional Experience

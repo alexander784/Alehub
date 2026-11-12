@@ -72,38 +72,28 @@ const GithubIcon = () => (
 
 export default function Welcome() {
   return (
-    <main className={`${body.className} min-h-screen bg-amber-50 text-black`}>
-      <div className="mx-auto grid max-w-5xl items-center gap-14 px-6 py-16 md:grid-cols-[1fr_auto] md:py-28">
-        {/* Left: pitch */}
+    <main className={`${body.className} min-h-screen bg-green-50 text-black`}>
+      <div className="mx-auto grid max-w-5xl items-start gap-14 px-6 pt-8 pb-16 md:grid-cols-[1fr_auto] md:pt-12 md:pb-28">
         <div>
-          <p className="text-base text-black/60">
-           Data &amp; Software Developer
-          </p>
+<p className="text-base text-black/60">
+  Software &amp; Data
+</p>
 
-          <h1
-            className={`${display.className} mt-6 max-w-3xl text-5xl font-extrabold leading-[1.02] tracking-tight text-black md:text-7xl`}
-          >
-            Your idea is ready. Is your tech?
-          </h1>
+<h1
+  className={`${display.className} mt-6 max-w-2xl text-4xl font-medium leading-tight tracking-tight text-black md:text-5xl`}
+>
+  Building systems that work and products that last.
+</h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-black">
-            I build platforms that{" "}
-            <span className="text-teal-700">handle real customers,</span> real
-            payments and real data without breaking. APIs, backends and data
-            pipelines designed to scale from day one so you never pay for a
-            rebuild.
-          </p>
+<p className="mt-6 max-w-xl text-lg leading-relaxed text-black/80">
+  I&apos;m Alexander, a software and data engineer. I design and build{" "}
+  <span className="text-teal-700">
+    backends, APIs and data pipelines
+  </span>{" "}
+  that handle real customers, real payments and real data, and keep
+  running long after launch.
+</p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-            <a
-              href={MAILTO}
-              
-              className={`font-medium underline decoration-teal-700 decoration-2 underline-offset-8 ${focus}`}
-            >
-              Tell me what you&apos;re building
-            </a>
-            
-          </div>
         </div>
 
         <div className="flex flex-col items-center text-center">

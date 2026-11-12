@@ -126,9 +126,8 @@ const faqs = [
 export default function ServicesPage() {
   return (
     <>
-      <main className={`${body.className} bg-amber-50 text-black`}>
+      <main className={`${body.className} bg-green-50 text-black`}>
         <div className="mx-auto max-w-5xl px-6 py-16 md:py-24">
-          {/* Hero */}
           <Link href="/" className={`text-sm text-black/60 hover:text-teal-700 ${focus}`}>
             &larr; Back home
           </Link>
